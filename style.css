@@ -11,3 +11,8 @@ header, nav, a {
     color: #e600e6;
 }
 
+#beginning {
+    text-align: center;
+    display: block;
+    padding-top: 30px;
+}
