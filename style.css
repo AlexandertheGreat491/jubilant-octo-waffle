@@ -18,5 +18,6 @@ header, nav, a {
 }
 
 #title {
-    
+    font-weight: bold;
+    font-size: 20px;
 }
