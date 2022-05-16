@@ -64,6 +64,8 @@ line-height: 85%;
     margin: 5px;
 }
 
+/*General styling for all <div> elements under .quiz*/
+
 .quiz div {
 margin: 10px 0px 30px 20px;
 position: relative;
