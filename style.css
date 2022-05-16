@@ -94,5 +94,12 @@ right: -420px;
     font-size: 15px;
 }
 
+#scores {
+    position: relative;
+    margin: 10px 0px 30px 20px;
+    position: relative;
+    right: -420px; 
+}
+
 
 
