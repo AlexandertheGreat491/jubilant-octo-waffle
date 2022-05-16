@@ -52,5 +52,7 @@ line-height: 85%;
     background-color: #800080;
     color: #ffffff;
     font-size: 14px;
-    
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
 }
