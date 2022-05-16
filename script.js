@@ -9,3 +9,7 @@ for users to compare themselves to their peers.*/
 // When the game is over the users can save their initials and score.
 
 // Users will click the "Start Quiz" button, the time will start and the user will be presented with a question.
+
+function timerStart() {
+    
+}
