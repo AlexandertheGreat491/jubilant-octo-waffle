@@ -49,5 +49,8 @@ line-height: 85%;
 }
 
 .quiz button {
+    background-color: #800080;
+    color: #ffffff;
+    font-size: 14px;
     
 }
