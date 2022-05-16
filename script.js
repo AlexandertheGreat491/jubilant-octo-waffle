@@ -8,36 +8,25 @@ for users to compare themselves to their peers.*/
 // When all questions are answered OR the timer reaches 0, then the game is over.
 // When the game is over the users can save their initials and score.
 
-// Users will click the "Start Quiz" button, the time will start and the user will be presented with a question.
+// Users will click the "Start Quiz" button and the timer will start.
 
-//Set the date being counted down to
-var countDownDate = new Date("May 30, 2022 1:10:30").getTime();
+document.getElementById("gameStart").addEventListener("click", function(){
+    var timeleft = 120;
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+    var quizTimer = setInterval(function function1(){
+    document.getElementById("countdown").innerHTML = timeleft + 
+    "&nbsp"+"seconds remaining";
 
-    // Get today's date and time
-    var now = new Date().getTime();
+    timeleft -= 1;
+    if(timeleft <= 0){
+        clearInterval(quizTimer);
+        document.getElementById("countdown").innerHTML = "Time has expired."
+    }
+    }, 1000);
 
-    // Find the distance between now and the count down date
-    var distance = countDownDate - now;
-
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-}, 1000);
-
-// Display the result in the element with the id="timer"
-
-document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "Time is Up!";
-  }
-
+    console.log(countdown);
+});
+    
+/*cb64. (2019, February 11). javascript - how to add onclick event to start timer. Stack Overflow. 
+Retrieved May 16, 2022, from https://stackoverflow.com/questions/54637148/how-to-add-onclick-event-to-start-timer*/
 
