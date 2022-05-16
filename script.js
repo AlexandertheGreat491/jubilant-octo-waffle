@@ -35,3 +35,23 @@ Retrieved May 16, 2022, from https://stackoverflow.com/questions/54637148/how-to
 //Variables declared for high scores.
 
 var highScore = document.querySelector("#highScore");
+var remove = document.querySelector("#blank");
+var backward = document.querySelector("#back");
+
+// The event listener to clear/remove scores.
+
+remove.addEventListener("click", function () {
+    localStorage.remove();
+    location.reload();
+});
+
+// The local storage is retrieved.
+
+var everyScore = localStorage.getItem("everyScore");
+everyScore = JSON.parse(everyScore);
+
+if (everyScore !== null) {
+    for (var i = 0; i < everyScore.length; i++) {
+        
+    }
+}
