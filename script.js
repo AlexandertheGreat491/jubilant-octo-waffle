@@ -52,6 +52,9 @@ everyScore = JSON.parse(everyScore);
 
 if (everyScore !== null) {
     for (var i = 0; i < everyScore.length; i++) {
-        
+        var makeLi = document.createElement("li");
+        makeLi.textContent = everyScore[i].initials + "" + everyScore[i].score;
+        highScore.appendChild(makeLi);
     }
+    
 }
