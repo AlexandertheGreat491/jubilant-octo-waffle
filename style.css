@@ -75,4 +75,8 @@ right: -420px;
 #finished {
     font-weight: bold;
     font-size: 20px;
+    position: relative;
+    margin: 10px 0px 30px 20px;
+    position: relative;
+    right: -420px;
 }
