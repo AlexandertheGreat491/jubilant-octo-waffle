@@ -4,6 +4,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header, nav {
-    
+header, nav, a {
+    text-align: left;
+    color: #e600e6;
 }
