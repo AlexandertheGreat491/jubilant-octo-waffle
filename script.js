@@ -60,3 +60,7 @@ if (everyScore !== null) {
 
 /* The event listener that will allow the user to 
 go back in the index.html*/
+
+backward.addEventListener("click", function() {
+    window.location.replace("index.html");
+});
