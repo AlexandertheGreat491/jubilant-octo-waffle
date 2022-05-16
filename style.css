@@ -72,7 +72,7 @@ position: relative;
 right: -420px;
 }
 
-/*Styling for final part of the page where users can enter theirs initals and submit*/
+/*Styling for final part of the page where users can enter their initals and submit*/
 
 #finished {
     position: relative;
@@ -81,17 +81,18 @@ right: -420px;
     right: -420px;
 }
 
+/*Styling for the <h1> element in #finished <section>*/
+
 #finished h1 {
     font-weight: bold;
     font-size: 20px;
 }
 
+/*Styling for the label above the input in #finished <section>*/
+
 #finished label {
     font-size: 15px;
 }
 
-#score {
-    position: relative;
-    right: -175px;
-    top: -27px;
-}
+
+
