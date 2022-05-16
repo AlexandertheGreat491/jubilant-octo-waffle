@@ -42,11 +42,15 @@ border-radius: 5px;
 width: 10%;
 }
 
+/*Styling for <p> elements under .quiz*/
+
 .quiz p {
 font-weight: bold;
 font-size: 18px;
 line-height: 85%;
 }
+
+/*Styling for <button> elements under .quiz*/
 
 .quiz button {
     background-color: #800080;
