@@ -45,6 +45,8 @@ remove.addEventListener("click", function () {
     location.reload();
 });
 
+//location.reload() reloads the document without any of the scores that were previously stored.
+
 // The local storage is retrieved for high scores.
 
 var everyScore = localStorage.getItem("everyScore");
