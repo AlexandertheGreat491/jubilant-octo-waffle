@@ -100,7 +100,7 @@ right: -420px;
 }
 
 #scores button {
-    
+    display: inline-block;
 }
 
 
