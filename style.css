@@ -82,3 +82,9 @@ right: -420px;
     position: relative;
     right: -420px;
 }
+
+#score {
+    position: relative;
+    right: -175px;
+    top: -27px;
+}
