@@ -45,7 +45,7 @@ remove.addEventListener("click", function () {
     location.reload();
 });
 
-// The local storage is retrieved.
+// The local storage is retrieved for high scores.
 
 var everyScore = localStorage.getItem("everyScore");
 everyScore = JSON.parse(everyScore);
@@ -56,5 +56,6 @@ if (everyScore !== null) {
         makeLi.textContent = everyScore[i].initials + "" + everyScore[i].score;
         highScore.appendChild(makeLi);
     }
-    
 }
+
+
