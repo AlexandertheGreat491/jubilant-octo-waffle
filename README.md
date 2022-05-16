@@ -35,12 +35,10 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+Collaborators:
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
-
+Tutorials used:
+cb64. (2019, February 11). javascript - how to add onclick event to start timer. Stack Overflow. Retrieved May 16, 2022, from https://stackoverflow.com/questions/54637148/how-to-add-onclick-event-to-start-timer
 ## License
 
 The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
