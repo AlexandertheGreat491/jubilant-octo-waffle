@@ -21,3 +21,7 @@ header, nav, a {
     font-weight: bold;
     font-size: 40px;
 }
+
+#beginning p {
+    font-size: 20px;
+}
