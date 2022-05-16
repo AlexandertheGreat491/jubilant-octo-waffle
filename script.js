@@ -58,4 +58,5 @@ if (everyScore !== null) {
     }
 }
 
-
+/* The event listener that will allow the user to 
+go back in the index.html*/
