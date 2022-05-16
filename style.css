@@ -11,20 +11,28 @@ header, nav, a {
     color: #e600e6;
 }
 
+/*General styling for the <section> with the beginning id*/
+
 #beginning {
     text-align: center;
     display: block;
     padding-top: 30px;
 }
 
+/*Styling for the <h1> in the #beginning section*/
+
 #title {
     font-weight: bold;
     font-size: 40px;
 }
 
+/* Styling for the <p> elements in the #beginning section*/
+
 #beginning p {
     font-size: 18px;
 }
+
+/*Styling for the "Start Quiz" button*/
 
 #gameStart {
 background-color: #800080;
