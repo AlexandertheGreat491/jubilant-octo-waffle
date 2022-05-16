@@ -75,12 +75,19 @@ right: -420px;
 /*Styling for final part of the page where users can enter theirs initals and submit*/
 
 #finished {
-    font-weight: bold;
-    font-size: 20px;
     position: relative;
     margin: 10px 0px 30px 20px;
     position: relative;
     right: -420px;
+}
+
+#finished h1 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#finished label {
+    font-size: 15px;
 }
 
 #score {
