@@ -72,6 +72,8 @@ position: relative;
 right: -420px;
 }
 
+/*Styling for final part of the page where users can enter theirs initals and submit*/
+
 #finished {
     font-weight: bold;
     font-size: 20px;
