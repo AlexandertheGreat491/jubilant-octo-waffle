@@ -43,7 +43,9 @@ var questions = [
     },
 
 ];
+
 // Declared variables
+
 var score = 0;
 var questionIndex = 0;
 var currentTime = document.querySelector("#currentTime");
