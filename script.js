@@ -105,8 +105,23 @@ function render(questionBank) {
         var userChoices = quizQuestions[questionBank].options;
         beginning.textContent = userQuestion;
     }
-    
+
     // For question choices.
+
+    userChoices.forEach(function (newItem) {
+        var listItem = document.createElement("li");
+        listItem.textContent = newItem;
+        beginning.appendChild(ulCreate);
+        ulCreate.appendChild(listItem);
+        listItem.addEventListener("click", (compare));
+    })
+}
+
+// Event that compares the choices with the answer.
+
+function comparison(event) {
+    var element = event.target;
+
 }
 // High scores will be stored.
 
