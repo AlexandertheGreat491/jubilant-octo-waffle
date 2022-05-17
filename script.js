@@ -218,7 +218,10 @@ if (initials === null) {
         allScores = JSON.parse(allScores);
 
     }
-    
+    allScores.push(lastScore);
+    var newScore = JSON.stringify(allScores);
+    localStorage.setItem("allScores", newScore);
+    // User is sent to the final page.
 }
 });
 }
