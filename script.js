@@ -30,6 +30,8 @@ document.getElementById("gameStart").addEventListener("click", function(){
 /*cb64. (2019, February 11). javascript - how to add onclick event to start timer. Stack Overflow. 
 Retrieved May 16, 2022, from https://stackoverflow.com/questions/54637148/how-to-add-onclick-event-to-start-timer*/
 
+// Users wil be presented with a question and another question.
+
 // High scores will be stored.
 
 //Variables declared for high scores.
