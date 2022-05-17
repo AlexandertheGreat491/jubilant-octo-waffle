@@ -50,7 +50,7 @@ var questionIndex = 0;
 // Start working code 
 // Declared variables
 var currentTime = document.querySelector("#currentTime");
-var timer = document.querySelector("#startTime");
+var timer = document.querySelector("#gameStart");
 var questionsDiv = document.querySelector("#questionsDiv");
 var wrapper = document.querySelector("#wrapper");
 
