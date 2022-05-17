@@ -1,3 +1,7 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
 #wrapper {
     position: absolute;
     left: 30%;
@@ -135,7 +139,7 @@ li {
         position: absolute;
         left: 10%;
     }
-    
+
       a {
           margin-left: 10%;
       }
