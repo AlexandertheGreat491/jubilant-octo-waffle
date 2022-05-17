@@ -150,7 +150,18 @@ beginning.appendChild(makeDiv);
 }
 
 function allDone() {
-    
+    beginning.innerHTML = "";
+    currentTime.innerHTML = "";
+// creates heading
+var createH1 = document.createElement("h1");
+createH1.setAttribute("id", "createH1");
+createH1.textContent = "All Done!"
+
+beginning.appendChild(createH1);
+
+// create paragraph
+
+
 }
 // High scores will be stored.
 
