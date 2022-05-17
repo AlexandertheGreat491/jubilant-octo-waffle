@@ -167,7 +167,36 @@ createP.setAttribute("id", "createP");
 beginning.appendChild(createP);
 
 // Time remaining and replaces it with score.
+if (secondsLeft >= 0) {
+    var timeRemaining = secondsLeft;
+    var createP2 = document.createElement("p");
+    clearInterval(holdInterval);
+    createP.textContent = "Your final score is: " + timeRemaining;
 
+    beginning.appendChild(createP2);
+}
+
+// Label
+var makeLabel = document.createElement("label");
+makeLabel.setAttribute("id", "makeLabel");
+makeLabel.textContent = "Enter your initials: ";
+
+beginning.appendChild(createLabel);
+
+// Input
+var makeInput = document.createElement("input");
+makeInput.setAttribute("type", "text");
+makeInput.setAttribute("id", "initials");
+makeInput.textContent = "";
+
+beginning.appendChild(createInput);
+
+// Submit
+
+var makeSubmission = document.createElement("button");
+makeSubmission.setAttribute("type", "submit");
+makeSubmission.setAttribute("id", "Submit");
+makeSubmission.textContent = "Submit";
 }
 // High scores will be stored.
 
