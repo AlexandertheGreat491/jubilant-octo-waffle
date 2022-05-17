@@ -105,6 +105,8 @@ function render(questionBank) {
         var userChoices = quizQuestions[questionBank].options;
         beginning.textContent = userQuestion;
     }
+    
+    // For question choices.
 }
 // High scores will be stored.
 
