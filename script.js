@@ -197,10 +197,20 @@ function allDone() {
 
     // Directs the application on actions to be taken when the "Submit" button is clicked by the user.
     // createElement() creates the element for the "Submit" button.
+
     var createSubmit = document.createElement("button");
+
     createSubmit.setAttribute("type", "submit");
+
+    // setAttribute() sets the type of button the "Submit" button will be.
+
     createSubmit.setAttribute("id", "Submit");
+
+    // setAttribute() sets the id for the button.
+
     createSubmit.textContent = "Submit";
+
+// textContent dicates the text that will be displayed for the createSubmit node.
 
     questionsDiv.appendChild(createSubmit);
 
