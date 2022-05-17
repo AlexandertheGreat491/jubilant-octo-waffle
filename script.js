@@ -57,26 +57,11 @@ var currentTime = document.querySelector("#currentTime");
 var timer = document.querySelector("#gameStart");
 var beginning = document.querySelector("#beginning");
 var wrapper = document.querySelector("#wrapper");
-// Users will click the "Start Quiz" button and the timer will start.
 
-document.getElementById("gameStart").addEventListener("click", function(){
-    var timeleft = 120;
+// Variable that sets total time for timer.
 
-    var quizTimer = setInterval(function function1(){
-    document.getElementById("countdown").innerHTML = timeleft + 
-    "&nbsp"+"seconds remaining";
+var secondsLeft = 120;
 
-    timeleft -= 1;
-    if(timeleft <= 0){
-        clearInterval(quizTimer);
-        document.getElementById("countdown").innerHTML = "Time has expired."
-    }
-    }, 1000);
-
-    console.log(countdown);
-});
-/*cb64. (2019, February 11). javascript - how to add onclick event to start timer. Stack Overflow. 
-Retrieved May 16, 2022, from https://stackoverflow.com/questions/54637148/how-to-add-onclick-event-to-start-timer*/
 
 // High scores will be stored.
 
