@@ -110,34 +110,42 @@ function render(questionIndex) {
         listItem.addEventListener("click", (compare));
     })
 }
-// Event to compare choices with answer
+
+/*Event to compare choices with answer
+when the user selects one of the choices.*/
+
 function compare(event) {
     var element = event.target;
-
     if (element.matches("li")) {
 
         var createDiv = document.createElement("div");
         createDiv.setAttribute("id", "createDiv");
-        // Correct condition 
+
+        // The if statement is triggered when the user selects the correct choice.
+
         if (element.textContent == questions[questionIndex].answer) {
             score++;
             createDiv.textContent = "Correct! The answer is:  " + questions[questionIndex].answer;
-            // Correct condition 
+            
         } else {
-            // Will deduct -5 seconds off timeRemaining for wrong answers
+            // Will deduct -10 seconds off timeRemaining for wrong answers
             timeRemaining = timeRemaining - penalty;
             createDiv.textContent = "Wrong! The correct answer is:  " + questions[questionIndex].answer;
         }
 
+// The else statement will be triggered if the user selects the wrong answer.
+
     }
 
-    // Question Index determines number question user is on
+    // Question Index determines number question user is currently answering.
 
     questionIndex++;
 
     if (questionIndex >= questions.length) {
-        // All done will append last page with user stats
         allDone();
+
+    // When the allDone() function is triggered the string in createDiv.textContent will display to the user.
+
         createDiv.textContent = "End of quiz!" + " " + "You got  " + score + "/" + questions.length + " Correct!";
     } else {
         render(questionIndex);
@@ -153,7 +161,8 @@ function allDone() {
     questionsDiv.innerHTML = "";
     currentTime.innerHTML = "";
 
-    // Heading:
+    // Heading on the second to last screen.
+
     var createH1 = document.createElement("h1");
     createH1.setAttribute("id", "createH1");
     createH1.textContent = "All Done!"
@@ -165,6 +174,8 @@ function allDone() {
     createP.setAttribute("id", "createP");
 
     questionsDiv.appendChild(createP);
+
+// appendChild() adds the questionsDiv node onto the createP parent node.
 
     // Calculates time remaining and replaces it with the user's score.
 
@@ -186,7 +197,9 @@ function allDone() {
 
     questionsDiv.appendChild(createLabel);
 
-    // Creates the input field & tells the application what to expect in the input field.
+// appendChild() adds the questionsDiv node onto the createLabel parent node.
+
+// Creates the input field & tells the application what to expect in the input field.
 
     var createInput = document.createElement("input");
     createInput.setAttribute("type", "text");
@@ -195,18 +208,20 @@ function allDone() {
 
     questionsDiv.appendChild(createInput);
 
-    // Directs the application on actions to be taken when the "Submit" button is clicked by the user.
-    // createElement() creates the element for the "Submit" button.
+// appendChild() adds the questionsDiv node onto the createInput parent node.
+
+// Directs the application on actions to be taken when the "Submit" button is clicked by the user.
+// createElement() creates the element for the "Submit" button.
 
     var createSubmit = document.createElement("button");
 
     createSubmit.setAttribute("type", "submit");
 
-    // setAttribute() sets the type of button the "Submit" button will be.
+// setAttribute() sets the type of button the "Submit" button will be.
 
     createSubmit.setAttribute("id", "Submit");
 
-    // setAttribute() sets the id for the button.
+// setAttribute() sets the id for the button.
 
     createSubmit.textContent = "Submit";
 
@@ -214,7 +229,8 @@ function allDone() {
 
     questionsDiv.appendChild(createSubmit);
 
-    // Event listener to capture initials and local storage for initials and score
+// appendChild() adds the questionsDiv node onto the createSubmit parent node.
+// Event listener to capture initials and local storage for initials and score
     createSubmit.addEventListener("click", function () {
         var initials = createInput.value;
 
