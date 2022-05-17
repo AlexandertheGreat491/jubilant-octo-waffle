@@ -96,7 +96,15 @@ timer.addEventListener("click", function () {
 // Questions and choices will be rendered on the page.
 function render(questionBank) {
     // Removes existing data
-    
+    beginning.innerHTML = "";
+    ulCreate.innerHTML = "";
+    // This for loop, loops through the array.
+    for (var i=0; i < questions.length; i++) {
+        // Appends question
+        var userQuestion = quizQuestions[questionBank].question;
+        var userChoices = quizQuestions[questionBank].options;
+        beginning.textContent = userQuestion;
+    }
 }
 // High scores will be stored.
 
