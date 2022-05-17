@@ -13,34 +13,33 @@ for users to compare themselves to their peers.*/
 
 // Users wil be presented with a question and another question.
 
-/* The questions are contained in the array variable quizQuestions
-as objects. */
+/* The questions are contained in the array variable questions*/
 
-var quizQuestions = [
+var questions = [
     {
-        question: "Commonly used data types DO NOT include:",
-        options: ["strings", "booleans", "alerts", "numbers"],
-        correct: "alerts"
+        title: "Commonly used data types DO NOT include:",
+        choices: ["strings", "booleans", "alerts", "numbers"],
+        answer: "alerts"
     },
     {
-        question: "The condition in an if/else statement is enclosed within_______.",
-        options: ["quotes", "curly brackets", "parentheses", "square brackets"],
-        correct: "parentheses"
+        title: "The condition in an if/else statement is enclosed within_______.",
+        choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
+        answer: "parentheses"
     },
     {
-        question: "Arrays in JavaScript can be used to store ______.",
-        options: ["numbers and strings", "other arrays", "booleans", "all of the above"],
-        correct: "all of the above"
+        title: "Arrays in JavaScript can be used to store ______.",
+        choices: ["numbers and strings", "other arrays", "booleans", "all of the above"],
+        answer: "all of the above"
     },
     {
-        question: "String values must be enclosed within___when being assigned.",
-        options: ["commas", "curly brackets", "quotes", "parenthesis"],
-        correct: "quotes"
+        title: "String values must be enclosed within___when being assigned.",
+        choices: ["commas", "curly brackets", "quotes", "parenthesis"],
+        answer: "quotes"
     },
     {
-        question: "A very useful tool used during development and debugging for printing content to the debugger is:",
-        options: ["JavaScript", "terminal/bash", "for loops", "console log"],
-        correct: "console.log"
+        title: "A very useful tool used during development and debugging for printing content to the debugger is:",
+        choices: ["JavaScript", "terminal/bash", "for loops", "console log"],
+        answer: "console.log"
     },
 
 
@@ -49,13 +48,13 @@ var quizQuestions = [
 // Declared variables
 
 var score = 0;
-var questions = 0;
+var questionIndex = 0;
 
 // Start of js that will render on the page.
 // Declared variables
 var currentTime = document.querySelector("#currentTime");
 var timer = document.querySelector("#gameStart");
-var beginning = document.querySelector("#beginning");
+var beginning = document.querySelector("#questionsDiv");
 var wrapper = document.querySelector("#wrapper");
 
 // Variable that sets total time for timer.
@@ -90,20 +89,20 @@ timer.addEventListener("click", function () {
             }
         }, 1000);
     }
-    render(questionBank);
+    render(questionIndex);
 });
 
 // Questions and choices will be rendered on the page.
-function render(questionBank) {
+function render(questionIndex) {
     // Removes existing data
-    beginning.innerHTML = "";
+    questionsDiv.innerHTML = "";
     ulCreate.innerHTML = "";
     // This for loop, loops through the array.
-    for (var i=0; i < quizQuestions.length; i++) {
+    for (var i=0; i < questions.length; i++) {
         // Appends question
-        var userQuestion = quizQuestions[questionBank].question;
-        var userChoices = quizQuestions[questionBank].options;
-        beginning.textContent = userQuestion;
+        var userQuestion = questions[questionIndex].title;
+        var userChoices = questions[questionIndex].choices;
+        questionsDiv.textContent = userQuestion;
     }
 
     // For question choices.
@@ -111,7 +110,7 @@ function render(questionBank) {
     userChoices.forEach(function (newItem) {
         var listItem = document.createElement("li");
         listItem.textContent = newItem;
-        beginning.appendChild(ulCreate);
+        questionsDiv.appendChild(ulCreate);
         ulCreate.appendChild(listItem);
         listItem.addEventListener("click", (compare));
     })
@@ -126,45 +125,45 @@ if (element.matches("li")) {
 var makeDiv = document.createElement("div");
 makeDiv.setAttribute("id", "makeDiv");
 // Condition if the correct option is selected for a question
-if (element.textContent == quizQuestions[questionBank].correct) {
+if (element.textContent == questions[questionIndex].answer) {
     score++;
-    makeDiv.textContent ="Correct! The answers is: " + questions[questionBank].correct;
+    makeDiv.textContent ="Correct! The answers is: " + questions[questionIndex].answer;
 } else {
     // Will deduct -10 seconds off secondsLeft for wrong answers.
     secondsLeft = secondsLeft - penalty;
-    makeDiv.textContent = "Wrong! The correct answer is: " + quizQuestions[questionBank].correct;
+    makeDiv.textContent = "Wrong! The correct answer is: " + questions[questionIndex].correct;
 }
 }
 
 // Question Bank determines which question the user is on.
 questionBank++;
 
-if (questionBank >= quizQuestions.length) {
+if (questionIndex >= questions.length) {
     // Appends last page with user scores
     allDone();
-    makeDiv.textContent = "End of quiz!" + "" + "You got  " + score + quizQuestions.length + "Correct!";
+    makeDiv.textContent = "End of quiz!" + "" + "You got  " + score + questions.length + "Correct!";
 } else {
-    render(questionBank);
+    render(questionIndex);
 }
-beginning.appendChild(makeDiv);
+questionsDiv.appendChild(makeDiv);
 }
 
 function allDone() {
-    beginning.innerHTML = "";
+    questionsDiv.innerHTML = "";
     currentTime.innerHTML = "";
 // creates heading
 var createH1 = document.createElement("h1");
 createH1.setAttribute("id", "createH1");
 createH1.textContent = "All Done!"
 
-beginning.appendChild(createH1);
+questionsDiv.appendChild(createH1);
 
 // create paragraph
 
 var createP = document.createElement("p");
 createP.setAttribute("id", "createP");
 
-beginning.appendChild(createP);
+questionsDiv.appendChild(createP);
 
 // Time remaining and replaces it with score.
 if (secondsLeft >= 0) {
@@ -173,7 +172,7 @@ if (secondsLeft >= 0) {
     clearInterval(holdInterval);
     createP.textContent = "Your final score is: " + timeRemaining;
 
-    beginning.appendChild(createP2);
+    questionsDiv.appendChild(createP2);
 }
 
 // Label
