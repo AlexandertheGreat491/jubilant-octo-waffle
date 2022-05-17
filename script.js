@@ -46,9 +46,6 @@ var questions = [
 // Declared variables
 var score = 0;
 var questionIndex = 0;
-
-// Start working code 
-// Declared variables
 var currentTime = document.querySelector("#currentTime");
 var timer = document.querySelector("#gameStart");
 var questionsDiv = document.querySelector("#questionsDiv");
@@ -122,7 +119,9 @@ function compare(event) {
         }
 
     }
+
     // Question Index determines number question user is on
+
     questionIndex++;
 
     if (questionIndex >= questions.length) {
@@ -132,10 +131,13 @@ function compare(event) {
     } else {
         render(questionIndex);
     }
+
     questionsDiv.appendChild(createDiv);
 
 }
+
 // All done will append last page
+
 function allDone() {
     questionsDiv.innerHTML = "";
     currentTime.innerHTML = "";
@@ -154,6 +156,7 @@ function allDone() {
     questionsDiv.appendChild(createP);
 
     // Calculates time remaining and replaces it with score
+
     if (secondsLeft >= 0) {
         var timeRemaining = secondsLeft;
         var createP2 = document.createElement("p");
@@ -210,7 +213,7 @@ function allDone() {
             var newScore = JSON.stringify(allScores);
             localStorage.setItem("allScores", newScore);
             // Travels to final page
-            window.location.replace("./HighScores.html");
+            window.location.replace("HighScores.html");
         }
     });
 
