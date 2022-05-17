@@ -23,6 +23,17 @@
     float: right;
 }
 
-
+#goBack {
+    background-color:#800080;
+    position: relative;
+    padding: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    top: 30%;
+    left: 55%;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+}
 
 
