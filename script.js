@@ -181,7 +181,8 @@ function allDone() {
 
     questionsDiv.appendChild(createInput);
 
-    // submit
+    // Submit
+
     var createSubmit = document.createElement("button");
     createSubmit.setAttribute("type", "submit");
     createSubmit.setAttribute("id", "Submit");
@@ -218,3 +219,12 @@ function allDone() {
     });
 
 }
+
+// Declared variables for high scores.
+
+var highScore = document.querySelector("#highScore");
+var clear = document.querySelector("#clear");
+var goBack = document.querySelector("#goBack");
+
+// eventListener for the "Clear high scores" button
+
