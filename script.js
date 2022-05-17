@@ -166,7 +166,7 @@ function allDone() {
 
     questionsDiv.appendChild(createP);
 
-    // Calculates time remaining and replaces it with score
+    // Calculates time remaining and replaces it with the user's score
 
     if (timeRemaining >= 0) {
         var timeRemaining = timeRemaining;
