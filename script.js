@@ -53,8 +53,9 @@ var questions = 0;
 
 // Start of js that will render on the page.
 // Declared variables
-var beginning = document.querySelector("#beginning");
+var currentTime = document.querySelector("#currentTime");
 var timer = document.querySelector("#gameStart");
+var beginning = document.querySelector("#beginning");
 // Users will click the "Start Quiz" button and the timer will start.
 
 document.getElementById("gameStart").addEventListener("click", function(){
