@@ -99,6 +99,11 @@ right: -420px;
     right: -420px; 
 }
 
+#scores h1 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
 #scores button {
     display: inline-block;
 }
