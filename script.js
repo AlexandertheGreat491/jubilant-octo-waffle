@@ -64,7 +64,7 @@ var secondsLeft = 120;
 
 // This variable holds the interval time.
 
-var holdInterval = 0;
+var maintainInterval = 0;
 
 // This variable holds the penalty time.
 
@@ -76,8 +76,28 @@ var ulCreate = document.createElement("ul");
 
 // Triggers the timer and the user can see the time on the screen.
 
+timer.addEventListener("click", function () {
+    // We are checking zero because its originally set to zero
+    if (holdInterval === 0) {
+        holdInterval = setInterval(function () {
+            secondsLeft--;
+            currentTime.textContent = "Time: " + secondsLeft;
 
+            if (secondsLeft <= 0) {
+                clearInterval(holdInterval);
+                allDone();
+                currentTime.textContent = "Time's up!";
+            }
+        }, 1000);
+    }
+    render(questionBank);
+});
 
+// Questions and choices will be rendered on the page.
+function render(questionBank) {
+    // Removes existing data
+    
+}
 // High scores will be stored.
 
 //Variables declared for high scores.
