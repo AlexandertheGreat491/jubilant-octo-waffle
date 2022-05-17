@@ -44,7 +44,7 @@ var questions = [
 
 ];
 
-// Declared variables
+// Declared variables.
 
 var score = 0;
 var questionIndex = 0;
@@ -53,13 +53,20 @@ var quizTimer = document.querySelector("#gameStart");
 var questionsDiv = document.querySelector("#questionsDiv");
 var wrapper = document.querySelector("#wrapper");
 
-// Seconds left is 15 seconds per question:
+// Timer is set to 100 seconds.
+
 var secondsLeft = 100;
-// Holds interval time
+
+// Holds interval time.
+
 var holdInterval = 0;
-// Holds penalty time
+
+// Holds the amount of time that will be subtracted for wrong answers.
+
 var penalty = 10;
+
 // Creates new element
+
 var ulCreate = document.createElement("ul");
 
 // Triggers timer on button, shows user a display on the screen
