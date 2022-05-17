@@ -39,7 +39,7 @@ body {
 
 /*Styling for the #goBack button*/
 
-#goBack {
+#back {
     background-color:#800080;
     position: relative;
     padding: 10px;
@@ -54,7 +54,7 @@ body {
 
 /*Styling for the #clear button*/
 
-#clear {
+#remove {
     background-color: #800080;
     position: relative;
     padding: 10px;
@@ -144,13 +144,13 @@ li {
         margin-left: 20%;
     }
 
-    #goBack {
+    #back {
             
         position: relative;
         left: 55%;
     }
 
-    #clear {
+    #remove {
         
         position: relative;
         right: 5%;
