@@ -143,7 +143,14 @@ if (questionBank >= quizQuestions.length) {
     // Appends last page with user scores
     allDone();
     makeDiv.textContent = "End of quiz!" + "" + "You got  " + score + quizQuestions.length + "Correct!";
+} else {
+    render(questionBank);
 }
+beginning.appendChild(makeDiv);
+}
+
+function allDone() {
+    
 }
 // High scores will be stored.
 
