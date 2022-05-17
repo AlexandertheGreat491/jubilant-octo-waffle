@@ -92,3 +92,33 @@ li {
     border-top: 1px solid #cccccc;
 }
 
+/*Media queries start here*/
+
+@media screen and (max-width: 786px) {
+    body {
+        max-width: 786px;
+    }
+
+    #wrapper {
+        position: absolute;
+        left: 20%;
+    }
+
+    a {
+        margin-left: 20%;
+    }
+
+    #goBack {
+            
+        position: relative;
+        left: 55%;
+    }
+
+    #clear {
+        
+        position: relative;
+        right: 5%;
+        
+    }
+}
+
