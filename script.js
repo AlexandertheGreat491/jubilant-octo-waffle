@@ -222,9 +222,11 @@ if (initials === null) {
     var newScore = JSON.stringify(allScores);
     localStorage.setItem("allScores", newScore);
     // User is sent to the final page.
+    window.location.replace("secondary.html")
 }
 });
 }
+
 // High scores will be stored.
 
 //Variables declared for high scores.
