@@ -4,6 +4,8 @@ body {
     font-family:Arial, Helvetica, sans-serif;
 }
 
+/*Timer styling*/
+
 #wrapper {
     position: absolute;
     left: 30%;
@@ -13,6 +15,8 @@ body {
     border: 1px solid #800080;
 }
 
+/*Styling for the "Start Quiz" button*/
+
 #gameStart {
     background-color: #800080;
     margin-left: 33%;
@@ -21,13 +25,19 @@ body {
     color: #ffffff;
 }
 
+/*Styling for the #questionsDiv*/
+
 #questionDiv {
     margin: 20px;
 }
 
+/*Styling for the #currentTime div*/
+
 #currentTime {
     float: right;
 }
+
+/*Styling for the #goBack button*/
 
 #goBack {
     background-color:#800080;
@@ -42,6 +52,8 @@ body {
     text-decoration: none;
 }
 
+/*Styling for the #clear button*/
+
 #clear {
     background-color: #800080;
     position: relative;
@@ -53,14 +65,20 @@ body {
     text-align: center;
 }
 
+/*General button styling*/
+
 button {
     border-radius: 5px;
 }
+
+/*Styling for textarea*/
 
 textarea {
     width: 90%;
     margin: 20px;
 }
+
+/*Styling for "Submit" button on final page*/
 
 #Submit {
     background-color: #800080;
@@ -70,9 +88,13 @@ textarea {
     color: #ffffff;
 }
 
+/*Styling for label element*/
+
 label {
     margin-right: 10px;
 }
+
+/*Styling for the input element*/
 
 input {
     margin-bottom: 20px;
@@ -80,9 +102,13 @@ input {
     border: 1px solid #cccccc;
 }
 
+/*General h1 styling*/
+
 h1 {
     text-align: center;
 }
+
+/*General li styling*/
 
 li {
     background-color: #800080;
@@ -92,6 +118,8 @@ li {
     font-size: 18px;
     color: #ffffff;
 }
+
+/*Styling for #makeDiv*/
 
 #makeDiv {
     margin-top: 20px;
