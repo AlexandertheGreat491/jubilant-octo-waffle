@@ -54,7 +54,7 @@ var quizTimer = document.querySelector("#gameStart");
 var questionsDiv = document.querySelector("#questionsDiv");
 var wrapper = document.querySelector("#wrapper");
 
-// document.query.Selector() will return the first element within the documentation that has a corresponding id.
+// document.query.Selector() will return the first element within the documentation that has a corresponding 
 // Timer is set to 100 seconds.
 
 var secondsLeft = 100;
