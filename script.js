@@ -47,12 +47,12 @@ var questions = [
 var score = 0;
 var questionIndex = 0;
 var currentTime = document.querySelector("#currentTime");
-var timer = document.querySelector("#gameStart");
+var quizTimer = document.querySelector("#gameStart");
 var questionsDiv = document.querySelector("#questionsDiv");
 var wrapper = document.querySelector("#wrapper");
 
 // Seconds left is 15 seconds per question:
-var secondsLeft = 76;
+var secondsLeft = 100;
 // Holds interval time
 var holdInterval = 0;
 // Holds penalty time
@@ -61,7 +61,7 @@ var penalty = 10;
 var ulCreate = document.createElement("ul");
 
 // Triggers timer on button, shows user a display on the screen
-timer.addEventListener("click", function () {
+quizTimer.addEventListener("click", function () {
     // We are checking zero because its originally set to zero
     if (holdInterval === 0) {
         holdInterval = setInterval(function () {
