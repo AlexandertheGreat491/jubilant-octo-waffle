@@ -161,6 +161,12 @@ beginning.appendChild(createH1);
 
 // create paragraph
 
+var createP = document.createElement("p");
+createP.setAttribute("id", "createP");
+
+beginning.appendChild(createP);
+
+// Time remaining and replaces it with score.
 
 }
 // High scores will be stored.
