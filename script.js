@@ -45,6 +45,7 @@ var questions = [
 ];
 
 // Declared variables.
+//These variables are used for the bulk of the js in this application.
 
 var score = 0;
 var questionIndex = 0;
@@ -53,6 +54,7 @@ var quizTimer = document.querySelector("#gameStart");
 var questionsDiv = document.querySelector("#questionsDiv");
 var wrapper = document.querySelector("#wrapper");
 
+// document.query.Selector() will return the first element within the documentation that has a corresponding id.
 // Timer is set to 100 seconds.
 
 var secondsLeft = 100;
