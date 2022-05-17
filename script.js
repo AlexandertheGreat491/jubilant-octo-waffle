@@ -135,7 +135,9 @@ if (element.textContent == quizQuestions[questionBank].correct) {
     makeDiv.textContent = "Wrong! The correct answer is: " + quizQuestions[questionBank].correct;
 }
 }
+
 // Question Bank determines which question the user is on.
+questionBank++;
 
 }
 // High scores will be stored.
