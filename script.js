@@ -99,7 +99,7 @@ function render(questionBank) {
     beginning.innerHTML = "";
     ulCreate.innerHTML = "";
     // This for loop, loops through the array.
-    for (var i=0; i < questions.length; i++) {
+    for (var i=0; i < quizQuestions.length; i++) {
         // Appends question
         var userQuestion = quizQuestions[questionBank].question;
         var userChoices = quizQuestions[questionBank].options;
@@ -139,6 +139,11 @@ if (element.textContent == quizQuestions[questionBank].correct) {
 // Question Bank determines which question the user is on.
 questionBank++;
 
+if (questionBank >= quizQuestions.length) {
+    // Appends last page with user scores
+    allDone();
+    makeDiv.textContent = "End of quiz!" + "" + "You got  " + score + quizQuestions.length + "Correct!";
+}
 }
 // High scores will be stored.
 
