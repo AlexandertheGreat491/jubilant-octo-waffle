@@ -212,6 +212,12 @@ if (initials === null) {
     }
     console.log(lastScore);
     var allScores = localStorage.getItem("allScores");
+    if (allScores === null) {
+        allScores = [];
+    } else {
+        allScores = JSON.parse(allScores);
+
+    }
     
 }
 });
