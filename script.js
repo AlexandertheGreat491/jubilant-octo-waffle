@@ -211,6 +211,7 @@ if (initials === null) {
         score: timeRemaining
     }
     console.log(lastScore);
+    var allScores = localStorage.getItem("allScores");
     
 }
 });
