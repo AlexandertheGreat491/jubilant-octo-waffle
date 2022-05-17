@@ -50,6 +50,11 @@ var quizQuestions = [
         options: ["numbers and strings", "other arrays", "booleans", "all of the above"],
         correct: "all of the above"
     },
+    {
+        question: "String values must be enclosed within___when being assigned.",
+        options: ["commas", "curly brackets", "quotes", "parenthesis"],
+        correct: "quotes"
+    },
 
 
 ]
