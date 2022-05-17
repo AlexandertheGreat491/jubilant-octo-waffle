@@ -122,6 +122,21 @@ function render(questionBank) {
 function comparison(event) {
     var element = event.target;
 
+if (element.matches("li")) {
+var makeDiv = document.createElement("div");
+makeDiv.setAttribute("id", "makeDiv");
+// Condition if the correct option is selected for a question
+if (element.textContent == quizQuestions[questionBank].correct) {
+    score++;
+    makeDiv.textContent ="Correct! The answers is: " + questions[questionBank].correct;
+} else {
+    // Will deduct -10 seconds off secondsLeft for wrong answers.
+    secondsLeft = secondsLeft - penalty;
+    makeDiv.textContent = "Wrong! The correct answer is: " + quizQuestions[questionBank].correct;
+}
+}
+// Question Bank determines which question the user is on.
+
 }
 // High scores will be stored.
 
