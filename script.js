@@ -31,7 +31,8 @@ document.getElementById("gameStart").addEventListener("click", function(){
 Retrieved May 16, 2022, from https://stackoverflow.com/questions/54637148/how-to-add-onclick-event-to-start-timer*/
 
 // Users wil be presented with a question and another question.
-// Arrays for questions
+/* The questions are contained in the array variable quizQuestions
+as objects. */
 
 var quizQuestions = [
     {
@@ -44,6 +45,12 @@ var quizQuestions = [
         options: ["quotes", "curly brackets", "parentheses", "square brackets"],
         correct: "parentheses"
     },
+    {
+        question: "Arrays in JavaScript can be used to store ______.",
+        options: ["numbers and strings", "other arrays", "booleans", "all of the above"],
+        correct: "all of the above"
+    },
+
 
 ]
 // High scores will be stored.
