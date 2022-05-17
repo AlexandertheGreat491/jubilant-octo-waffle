@@ -62,6 +62,10 @@ var wrapper = document.querySelector("#wrapper");
 
 var secondsLeft = 120;
 
+// Holds interval time.
+
+var holdInterval = 0;
+
 
 // High scores will be stored.
 
