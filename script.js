@@ -55,9 +55,14 @@ var quizQuestions = [
         options: ["commas", "curly brackets", "quotes", "parenthesis"],
         correct: "quotes"
     },
+    {
+        question: "A very useful tool used during development and debugging for printing content to the debugger is:",
+        options: ["JavaScript", "terminal/bash", "for loops", "console log"],
+        correct: "console.log"
+    },
 
 
-]
+];
 // High scores will be stored.
 
 //Variables declared for high scores.
