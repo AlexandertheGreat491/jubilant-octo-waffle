@@ -1,12 +1,12 @@
 var highScore = document.querySelector("#highScore");
-var clear = document.querySelector("#remove");
-var goBack = document.querySelector("#back");
+var remove = document.querySelector("#remove");
+var back = document.querySelector("#back");
 
 //Even listener for "Clear high scores button"
- 
-clear.addEventListener("click", function () {
-    localStorage.clear();
-    location.reload();
+
+remove.addEventListener("click", function () {
+localStorage.clear();
+location.reload();
 });
 
 // Retrieves local storage
@@ -24,7 +24,9 @@ if (allScores !== null) {
 
     }
 }
-// Event listener to move to index page
-goBack.addEventListener("click", function () {
-    window.location.replace("index.html");
+
+//Event listener to move to the index page.
+
+back.addEventListener("click", function () {
+    window.location.replace("./index.html");
 });
