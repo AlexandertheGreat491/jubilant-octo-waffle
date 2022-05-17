@@ -180,7 +180,7 @@ var makeLabel = document.createElement("label");
 makeLabel.setAttribute("id", "makeLabel");
 makeLabel.textContent = "Enter your initials: ";
 
-beginning.appendChild(createLabel);
+questionsDiv.appendChild(createLabel);
 
 // Input
 var makeInput = document.createElement("input");
@@ -188,7 +188,7 @@ makeInput.setAttribute("type", "text");
 makeInput.setAttribute("id", "initials");
 makeInput.textContent = "";
 
-beginning.appendChild(createInput);
+questionsDiv.appendChild(createInput);
 
 // Submit
 
@@ -197,9 +197,10 @@ makeSubmission.setAttribute("type", "submit");
 makeSubmission.setAttribute("id", "Submit");
 makeSubmission.textContent = "Submit";
 
-beginning.appendChild(makeSubmission);
+questionsDiv.appendChild(makeSubmission);
 
 // This event listener captures user's initials & local storage for initials and score.
+
 makeSubmission.addEventListener("click", function(){
 var initials = makeInput.value;
 if (initials === null) {
