@@ -68,6 +68,11 @@ var holdInterval = 0;
 
 // This variable holds the penalty time.
 
+var penalty = 10;
+
+// Creates a new element
+
+var ulCreate = document.createElement("ul");
 
 // High scores will be stored.
 
