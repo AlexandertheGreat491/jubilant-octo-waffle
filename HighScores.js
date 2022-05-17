@@ -1,14 +1,16 @@
-// Declared variables
 var highScore = document.querySelector("#highScore");
 var clear = document.querySelector("#remove");
 var goBack = document.querySelector("#back");
 
-// Event listener to clear scores 
+//Even listener for "Clear high scores button"
+ 
 clear.addEventListener("click", function () {
     localStorage.clear();
     location.reload();
 });
-// Retreives local stroage 
+
+// Retrieves local storage
+
 var allScores = localStorage.getItem("allScores");
 allScores = JSON.parse(allScores);
 
