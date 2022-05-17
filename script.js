@@ -8,29 +8,11 @@ for users to compare themselves to their peers.*/
 // When all questions are answered OR the timer reaches 0, then the game is over.
 // When the game is over the users can save their initials and score.
 
-// Users will click the "Start Quiz" button and the timer will start.
 
-document.getElementById("gameStart").addEventListener("click", function(){
-    var timeleft = 120;
-
-    var quizTimer = setInterval(function function1(){
-    document.getElementById("countdown").innerHTML = timeleft + 
-    "&nbsp"+"seconds remaining";
-
-    timeleft -= 1;
-    if(timeleft <= 0){
-        clearInterval(quizTimer);
-        document.getElementById("countdown").innerHTML = "Time has expired."
-    }
-    }, 1000);
-
-    console.log(countdown);
-});
     
-/*cb64. (2019, February 11). javascript - how to add onclick event to start timer. Stack Overflow. 
-Retrieved May 16, 2022, from https://stackoverflow.com/questions/54637148/how-to-add-onclick-event-to-start-timer*/
 
 // Users wil be presented with a question and another question.
+
 /* The questions are contained in the array variable quizQuestions
 as objects. */
 
@@ -63,6 +45,32 @@ var quizQuestions = [
 
 
 ];
+
+// Declared variables
+var score = 0;
+var questions = 0;
+
+// Users will click the "Start Quiz" button and the timer will start.
+
+document.getElementById("gameStart").addEventListener("click", function(){
+    var timeleft = 120;
+
+    var quizTimer = setInterval(function function1(){
+    document.getElementById("countdown").innerHTML = timeleft + 
+    "&nbsp"+"seconds remaining";
+
+    timeleft -= 1;
+    if(timeleft <= 0){
+        clearInterval(quizTimer);
+        document.getElementById("countdown").innerHTML = "Time has expired."
+    }
+    }, 1000);
+
+    console.log(countdown);
+});
+/*cb64. (2019, February 11). javascript - how to add onclick event to start timer. Stack Overflow. 
+Retrieved May 16, 2022, from https://stackoverflow.com/questions/54637148/how-to-add-onclick-event-to-start-timer*/
+
 // High scores will be stored.
 
 //Variables declared for high scores.
