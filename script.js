@@ -62,9 +62,11 @@ var wrapper = document.querySelector("#wrapper");
 
 var secondsLeft = 120;
 
-// Holds interval time.
+// This variable holds the interval time.
 
 var holdInterval = 0;
+
+// THis variable holds the penalty time.
 
 
 // High scores will be stored.
