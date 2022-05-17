@@ -24,5 +24,5 @@ if (allScores !== null) {
 }
 // Event listener to move to index page
 goBack.addEventListener("click", function () {
-    window.location.replace("secondary.html");
+    window.location.replace("HighScores.html");
 });
