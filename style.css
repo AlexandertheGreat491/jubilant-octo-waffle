@@ -93,16 +93,22 @@ right: -420px;
     font-size: 15px;
 }
 
+/*General styling for the #scores/high scores section*/
+
 #scores {
     position: relative;
     margin: 10px 0px 30px 20px;
     right: -420px; 
 }
 
+/*Styling for the <h1> element in the #scores section*/
+
 #scores h1 {
     font-weight: bold;
     font-size: 20px;
 }
+
+/*General styling for the <button> elements in #scores <section>
 
 #scores button {
     display: inline-block;
