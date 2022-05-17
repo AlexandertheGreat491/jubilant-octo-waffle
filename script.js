@@ -35,10 +35,16 @@ Retrieved May 16, 2022, from https://stackoverflow.com/questions/54637148/how-to
 
 var quizQuestions = [
     {
-        quesion: "Commonly used data types DO NOT include:",
+        question: "Commonly used data types DO NOT include:",
         options: ["strings", "booleans", "alerts", "numbers"],
         correct: "alerts"
-    }
+    },
+    {
+        question: "The condition in an if/else statement is enclosed within_______.",
+        options: ["quotes", "curly brackets", "parentheses", "square brackets"],
+        correct: "parentheses"
+    },
+
 ]
 // High scores will be stored.
 
