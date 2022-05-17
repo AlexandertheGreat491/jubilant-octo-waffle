@@ -197,6 +197,23 @@ var makeSubmission = document.createElement("button");
 makeSubmission.setAttribute("type", "submit");
 makeSubmission.setAttribute("id", "Submit");
 makeSubmission.textContent = "Submit";
+
+beginning.appendChild(makeSubmission);
+
+// This event listener captures user's initials & local storage for initials and score.
+makeSubmission.addEventListener("click", function(){
+var initials = makeInput.value;
+if (initials === null) {
+    console.log("No value entered!");
+} else {
+    var lastScore = {
+        initials: initials,
+        score: timeRemaining
+    }
+    console.log(lastScore);
+    
+}
+});
 }
 // High scores will be stored.
 
