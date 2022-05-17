@@ -57,6 +57,14 @@ textarea {
 }
 
 #Submit {
-    
+    background-color: #800080;
+    margin-left: 33%;
+    padding: 15px 32px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+label {
+    margin-right: 10px;
 }
 
