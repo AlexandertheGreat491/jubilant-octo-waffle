@@ -115,6 +115,8 @@ right: -420px;
     border-radius: 5px;
 }
 
+/*Styling for the "Go Back" button*/
+
 #back {
     background-color: #ff1aff;
     color: #ffffff;
