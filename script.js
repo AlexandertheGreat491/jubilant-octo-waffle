@@ -31,7 +31,15 @@ document.getElementById("gameStart").addEventListener("click", function(){
 Retrieved May 16, 2022, from https://stackoverflow.com/questions/54637148/how-to-add-onclick-event-to-start-timer*/
 
 // Users wil be presented with a question and another question.
+// Arrays for questions
 
+var quizQuestions = [
+    {
+        quesion: "Commonly used data types DO NOT include:",
+        options: ["strings", "booleans", "alerts", "numbers"],
+        correct: "alerts"
+    }
+]
 // High scores will be stored.
 
 //Variables declared for high scores.
