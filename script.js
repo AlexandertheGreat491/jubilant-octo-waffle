@@ -166,7 +166,7 @@ function allDone() {
 
     questionsDiv.appendChild(createP);
 
-    // Calculates time remaining and replaces it with the user's score
+    // Calculates time remaining and replaces it with the user's score.
 
     if (timeRemaining >= 0) {
         var timeRemaining = timeRemaining;
@@ -177,14 +177,17 @@ function allDone() {
         questionsDiv.appendChild(createP2);
     }
 
-    // Label
+    /* Creates the label for the input field,
+    in other words the text that comes right before the input field.*/
+
     var createLabel = document.createElement("label");
     createLabel.setAttribute("id", "createLabel");
     createLabel.textContent = "Enter your initials: ";
 
     questionsDiv.appendChild(createLabel);
 
-    // input
+    // Creates the input field & tells the application what to expect in the input field.
+
     var createInput = document.createElement("input");
     createInput.setAttribute("type", "text");
     createInput.setAttribute("id", "initials");
@@ -192,8 +195,8 @@ function allDone() {
 
     questionsDiv.appendChild(createInput);
 
-    // Submit
-
+    // Directs the application on actions to be taken when the "Submit" button is clicked by the user.
+    // createElement() creates the element for the "Submit" button.
     var createSubmit = document.createElement("button");
     createSubmit.setAttribute("type", "submit");
     createSubmit.setAttribute("id", "Submit");
