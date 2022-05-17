@@ -57,7 +57,7 @@ var wrapper = document.querySelector("#wrapper");
 // document.query.Selector() will return the first element within the documentation that has a corresponding 
 // Timer is set to 100 seconds.
 
-var secondsLeft = 100;
+var timeRemaining = 100;
 
 // Holds interval time.
 
@@ -76,10 +76,10 @@ quizTimer.addEventListener("click", function () {
     // We are checking zero because its originally set to zero
     if (holdInterval === 0) {
         holdInterval = setInterval(function () {
-            secondsLeft--;
-            currentTime.textContent = "Time: " + secondsLeft;
+            timeRemaining--;
+            currentTime.textContent = "Time: " + timeRemaining;
 
-            if (secondsLeft <= 0) {
+            if (timeRemaining <= 0) {
                 clearInterval(holdInterval);
                 allDone();
                 currentTime.textContent = "Time's up!";
@@ -124,8 +124,8 @@ function compare(event) {
             createDiv.textContent = "Correct! The answer is:  " + questions[questionIndex].answer;
             // Correct condition 
         } else {
-            // Will deduct -5 seconds off secondsLeft for wrong answers
-            secondsLeft = secondsLeft - penalty;
+            // Will deduct -5 seconds off timeRemaining for wrong answers
+            timeRemaining = timeRemaining - penalty;
             createDiv.textContent = "Wrong! The correct answer is:  " + questions[questionIndex].answer;
         }
 
@@ -168,8 +168,8 @@ function allDone() {
 
     // Calculates time remaining and replaces it with score
 
-    if (secondsLeft >= 0) {
-        var timeRemaining = secondsLeft;
+    if (timeRemaining >= 0) {
+        var timeRemaining = timeRemaining;
         var createP2 = document.createElement("p");
         clearInterval(holdInterval);
         createP.textContent = "Your final score is: " + timeRemaining;
