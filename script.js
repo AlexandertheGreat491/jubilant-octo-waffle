@@ -66,7 +66,7 @@ var secondsLeft = 120;
 
 var holdInterval = 0;
 
-// THis variable holds the penalty time.
+// This variable holds the penalty time.
 
 
 // High scores will be stored.
