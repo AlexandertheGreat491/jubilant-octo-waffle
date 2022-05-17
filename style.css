@@ -112,10 +112,12 @@ right: -420px;
 
 #scores button {
     display: inline-block;
+    border-radius: 5px;
 }
 
 #back {
-    
+    background-color: #ff1aff;
+    color: #ffffff;
 }
 
 
