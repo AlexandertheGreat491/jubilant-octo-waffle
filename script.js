@@ -47,6 +47,7 @@ var quizQuestions = [
 ];
 
 // Declared variables
+
 var score = 0;
 var questions = 0;
 
