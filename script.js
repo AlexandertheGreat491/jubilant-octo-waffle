@@ -74,6 +74,10 @@ var penalty = 10;
 
 var ulCreate = document.createElement("ul");
 
+// Triggers the timer and the user can see the time on the screen.
+
+
+
 // High scores will be stored.
 
 //Variables declared for high scores.
