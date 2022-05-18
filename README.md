@@ -23,6 +23,8 @@ The project can be used through accessing the deployed URL and/or through access
 
 [Public repository URL](https://github.com/AlexandertheGreat491/jubilant-octo-waffle)
 
+![deployed application screenshot](https://user-images.githubusercontent.com/64184203/169137932-cbd0dc73-2b55-40fc-855b-cbb2683538a3.jpg)
+
 ## Credits
 
 Collaborators:
