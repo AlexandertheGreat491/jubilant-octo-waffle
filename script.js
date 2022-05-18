@@ -57,7 +57,7 @@ var wrapper = document.querySelector("#wrapper");
 // document.query.Selector() will return the first element within the documentation that has a corresponding id. 
 // The timer is set to 100 seconds.
 
-var secondsLeft = 100;
+var timeLeft = 100;
 
 // Holds interval time for the beginning of the timer.
 
@@ -78,10 +78,10 @@ quizTimer.addEventListener("click", function () {
     // We are checking zero because its originally set to zero
     if (holdInterval === 0) {
         holdInterval = setInterval(function () {
-            secondsLeft--;
-            currentTime.textContent = "Time: " + secondsLeft;
+            timeLeft--;
+            currentTime.textContent = "Time: " + timeLeft;
 
-            if (secondsLeft <= 0) {
+            if (timeLeft <= 0) {
                 clearInterval(holdInterval);
                 allDone();
                 currentTime.textContent = "Time's up!";
@@ -119,10 +119,10 @@ when the user selects one of the choices.*/
 function compare(event) {
     var element = event.target;
     if (element.matches("li")) {
-
+        // The element.matches() tests whether the element will be selected by the li CSS selector.
         var createDiv = document.createElement("div");
         createDiv.setAttribute("id", "createDiv");
-
+        // createElement() creates the "div" element.
         // The if statement is triggered when the user selects the correct choice.
 
         if (element.textContent == questions[questionIndex].answer) {
@@ -131,7 +131,7 @@ function compare(event) {
 
         } else {
             // Ten seconds will be subtracted when the user selects the wrong choice.
-            secondsLeft = secondsLeft- penalty;
+            timeLeft = timeLeft - penalty;
             createDiv.textContent = "Wrong! The correct answer is:  " + questions[questionIndex].answer;
         }
 
@@ -149,6 +149,7 @@ function compare(event) {
         // When the allDone() function is triggered the string in createDiv.textContent will display to the user.
 
         createDiv.textContent = "End of quiz!" + " " + "You got  " + score + "/" + questions.length + " Correct!";
+    // textContent will display the items in the above string.
     } else {
         render(questionIndex);
     }
@@ -182,8 +183,8 @@ function allDone() {
 
     // Calculates time remaining and the user's score.
 
-    if (secondsLeft >= 0) {
-        var timeRemaining = secondsLeft;
+    if (timeLeft >= 0) {
+        var timeRemaining = timeLeft;
         var createP2 = document.createElement("p");
         clearInterval(holdInterval);
         createP.textContent = "Your final score is: " + timeRemaining;
