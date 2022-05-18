@@ -27,6 +27,8 @@ The project can be used through accessing the deployed URL and/or through access
 
 Collaborators:
 
+[Alexander Van Dyke](https://github.com/AlexandertheGreat491)
+
 Tutorials used:
 cb64. (2019, February 11). javascript - how to add onclick event to start timer. Stack Overflow. Retrieved May 16, 2022, from https://stackoverflow.com/questions/54637148/how-to-add-onclick-event-to-start-timer
 W3Schools. (2022). CSS Tutorial. W3Schools. https://www.w3schools.com/css/default.asp
