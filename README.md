@@ -19,6 +19,9 @@ To have access to this repository, please clone this project to your local machi
 ## Usage
 The project can be used through accessing the deployed URL and/or through accessing the public GitHub repository for this project.
 
+Deployed application URL
+
+Public repository URL
 
 ## Credits
 
