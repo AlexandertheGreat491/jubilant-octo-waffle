@@ -103,6 +103,7 @@ function render(questionIndex) {
         var userChoices = questions[questionIndex].choices;
         questionsDiv.textContent = userQuestion;
     }
+    // The forEach() method ensures that the loop runs through each object in the array once.
     userChoices.forEach(function (newItem) {
         var listItem = document.createElement("li");
         listItem.textContent = newItem;
