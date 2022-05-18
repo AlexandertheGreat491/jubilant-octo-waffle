@@ -1,6 +1,6 @@
 var highScore = document.querySelector("#highScore");
 var remove = document.querySelector("#remove");
-var back = document.querySelector("#back");
+var goBack = document.querySelector("#back");
 
 //Even listener for "Clear high scores button"
 
@@ -27,6 +27,6 @@ if (allScores !== null) {
 
 //Event listener to move to the index page.
 
-back.addEventListener("click", function () {
+goBack.addEventListener("click", function () {
     window.location.replace("./index.html");
 });
