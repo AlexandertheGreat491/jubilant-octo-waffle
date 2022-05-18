@@ -13,7 +13,7 @@ for users to compare themselves to their peers.*/
 
 // Users wil be presented with a question and another question.
 
-/* The questions are contained in the array variable questions*/
+/* The data for the questions are contained in the array variable questions*/
 
 var questions = [
     {
@@ -44,8 +44,8 @@ var questions = [
 
 ];
 
-// Declared variables.
-//These variables are used for the bulk of the js in this application.
+
+// These variables are used for the bulk of the js in this application.
 
 var score = 0;
 var questionIndex = 0;
@@ -54,12 +54,12 @@ var quizTimer = document.querySelector("#gameStart");
 var questionsDiv = document.querySelector("#questionsDiv");
 var wrapper = document.querySelector("#wrapper");
 
-// document.query.Selector() will return the first element within the documentation that has a corresponding 
-// Timer is set to 100 seconds.
+// document.query.Selector() will return the first element within the documentation that has a corresponding id. 
+// The timer is set to 100 seconds.
 
 var timeRemaining = 100;
 
-// Holds interval time.
+// Holds interval time for the beginning of the timer.
 
 var holdInterval = 0;
 
@@ -67,11 +67,13 @@ var holdInterval = 0;
 
 var penalty = 10;
 
-// Creates new element
+// The document.createElement() method creates new <ul> element.
 
 var ulCreate = document.createElement("ul");
 
-// Triggers timer on button, shows user a display on the screen
+// Triggers timer on button, shows user a display on the screen.
+// The timer will start counting down as soon as the user clicks the "Start Quiz" button.
+
 quizTimer.addEventListener("click", function () {
     // We are checking zero because its originally set to zero
     if (holdInterval === 0) {
@@ -89,7 +91,9 @@ quizTimer.addEventListener("click", function () {
     render(questionIndex);
 });
 
-// Renders questions and choices to page: 
+/* The function below renders questions and choices to 
+, using the innerHTML property, which sets or returns HTML content.*/
+
 function render(questionIndex) {
     // Clears existing data 
     questionsDiv.innerHTML = "";
