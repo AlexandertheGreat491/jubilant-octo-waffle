@@ -9,7 +9,7 @@ for users to compare themselves to their peers.*/
 // When the game is over the users can save their initials and score.
 
 
-    
+
 
 // Users wil be presented with a question and another question.
 
@@ -95,17 +95,14 @@ quizTimer.addEventListener("click", function () {
 , using the innerHTML property, which sets or returns HTML content.*/
 
 function render(questionIndex) {
-    // Clears existing data 
     questionsDiv.innerHTML = "";
     ulCreate.innerHTML = "";
-    // For loops to loop through all info in array
+    // For loops to loop through all the objects in the array.
     for (var i = 0; i < questions.length; i++) {
-        // Appends question title only
         var userQuestion = questions[questionIndex].title;
         var userChoices = questions[questionIndex].choices;
         questionsDiv.textContent = userQuestion;
     }
-    // New for each for question choices
     userChoices.forEach(function (newItem) {
         var listItem = document.createElement("li");
         listItem.textContent = newItem;
@@ -130,14 +127,14 @@ function compare(event) {
         if (element.textContent == questions[questionIndex].answer) {
             score++;
             createDiv.textContent = "Correct! The answer is:  " + questions[questionIndex].answer;
-            
+
         } else {
-            // Will deduct -10 seconds off timeRemaining for wrong answers
+            // Ten seconds will be subtracted when the user selects the wrong choice.
             timeRemaining = timeRemaining - penalty;
             createDiv.textContent = "Wrong! The correct answer is:  " + questions[questionIndex].answer;
         }
 
-// The else statement will be triggered if the user selects the wrong answer.
+        // The else statement will be triggered if the user selects the wrong answer.
 
     }
 
@@ -148,7 +145,7 @@ function compare(event) {
     if (questionIndex >= questions.length) {
         allDone();
 
-    // When the allDone() function is triggered the string in createDiv.textContent will display to the user.
+        // When the allDone() function is triggered the string in createDiv.textContent will display to the user.
 
         createDiv.textContent = "End of quiz!" + " " + "You got  " + score + "/" + questions.length + " Correct!";
     } else {
@@ -179,7 +176,7 @@ function allDone() {
 
     questionsDiv.appendChild(createP);
 
-// appendChild() adds the questionsDiv node onto the createP parent node.
+    // appendChild() adds the questionsDiv node onto the createP parent node.
 
     // Calculates time remaining and replaces it with the user's score.
 
@@ -201,9 +198,9 @@ function allDone() {
 
     questionsDiv.appendChild(createLabel);
 
-// appendChild() adds the questionsDiv node onto the createLabel parent node.
+    // appendChild() adds the questionsDiv node onto the createLabel parent node.
 
-// Creates the input field & tells the application what to expect in the input field.
+    // Creates the input field & tells the application what to expect in the input field.
 
     var createInput = document.createElement("input");
     createInput.setAttribute("type", "text");
@@ -212,29 +209,29 @@ function allDone() {
 
     questionsDiv.appendChild(createInput);
 
-// appendChild() adds the questionsDiv node onto the createInput parent node.
+    // appendChild() adds the questionsDiv node onto the createInput parent node.
 
-// Directs the application on actions to be taken when the "Submit" button is clicked by the user.
-// createElement() creates the element for the "Submit" button.
+    // Directs the application on actions to be taken when the "Submit" button is clicked by the user.
+    // createElement() creates the element for the "Submit" button.
 
     var createSubmit = document.createElement("button");
 
     createSubmit.setAttribute("type", "submit");
 
-// setAttribute() sets the type of button the "Submit" button will be.
+    // setAttribute() sets the type of button the "Submit" button will be.
 
     createSubmit.setAttribute("id", "Submit");
 
-// setAttribute() sets the id for the button.
+    // setAttribute() sets the id for the button.
 
     createSubmit.textContent = "Submit";
 
-// textContent dicates the text that will be displayed for the createSubmit node.
+    // textContent dicates the text that will be displayed for the createSubmit node.
 
     questionsDiv.appendChild(createSubmit);
 
-// appendChild() adds the questionsDiv node onto the createSubmit parent node.
-// Event listener to capture initials and local storage for initials and score
+    // appendChild() adds the questionsDiv node onto the createSubmit parent node.
+    // Event listener to capture initials and local storage for initials and score
     createSubmit.addEventListener("click", function () {
         var initials = createInput.value;
 
