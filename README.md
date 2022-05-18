@@ -21,7 +21,7 @@ The project can be used through accessing the deployed URL and/or through access
 
 [Deployed application URL](https://alexanderthegreat491.github.io/jubilant-octo-waffle/)
 
-Public repository URL
+[Public repository URL](https://github.com/AlexandertheGreat491/jubilant-octo-waffle)
 
 ## Credits
 
