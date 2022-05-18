@@ -3,35 +3,25 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
 - What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
+My motivation in building this project was to build a quiz for boot camp students to have a tool for testing their learning and comprehension of JavaScript fundamentals.
+- Why did you build this project?
+I built this project to learn how to utlize Web APIs in JavaScript and use JavaScript to render and create elements and text in HTML.
 - What problem does it solve?
+The problem that was solved was using JavaScript, HTML, and CSS, along with Web APIs to create a quiz that boot camp students can use to test their knowledge for JavaScript fundamentals.
 - What did you learn?
-
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
+I learned how to use JavaScript and Web APIs to render and create create elements and text in HTML and to affect the ways in which an application will behave and function.
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+To have access to this repository, please clone this project to your local machine.
 
 ## Usage
+The project can be used through accessing the deployed URL and/or through accessing the public GitHub repository for this project.
 
-Provide instructions and examples for use. Include screenshots as needed.
+Deployed application URL
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+Public repository URL
 
 ## Credits
 
@@ -39,28 +29,18 @@ Collaborators:
 
 Tutorials used:
 cb64. (2019, February 11). javascript - how to add onclick event to start timer. Stack Overflow. Retrieved May 16, 2022, from https://stackoverflow.com/questions/54637148/how-to-add-onclick-event-to-start-timer
+W3Schools. (2022). CSS Tutorial. W3Schools. https://www.w3schools.com/css/default.asp
+
+W3Schools. (2022). HTML Tutorial. W3Schools. https://www.w3schools.com/html/default.asp
+
+W3Schools. (2022). JavaScript Tutorial. W3Schools. https://www.w3schools.com/js/default.asp
+
+Mozilla Foundation Mozilla Developer Network. (2022). JavaScript. https://developer.mozilla.org/en-US/docs/Web/JavaScript
+
+YouTube & The Net Ninja. (n.d.). JavaScriipt Tutorial For Beginners. Retrieved May 11, 2022, from https://www.youtube.com/playlist?list=PL4cUxeGkcC9i9Ae2D9Ee1RvylH38dKuET.
 ## License
 
 The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
 
 ---
 
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
