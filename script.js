@@ -57,7 +57,7 @@ var wrapper = document.querySelector("#wrapper");
 // document.query.Selector() will return the first element within the documentation that has a corresponding id. 
 // The timer is set to 100 seconds.
 
-var timeRemaining = 100;
+var secondsLeft = 100;
 
 // Holds interval time for the beginning of the timer.
 
@@ -78,10 +78,10 @@ quizTimer.addEventListener("click", function () {
     // We are checking zero because its originally set to zero
     if (holdInterval === 0) {
         holdInterval = setInterval(function () {
-            timeRemaining--;
-            currentTime.textContent = "Time: " + timeRemaining;
+            secondsLeft--;
+            currentTime.textContent = "Time: " + secondsLeft;
 
-            if (timeRemaining <= 0) {
+            if (secondsLeft <= 0) {
                 clearInterval(holdInterval);
                 allDone();
                 currentTime.textContent = "Time's up!";
@@ -131,12 +131,12 @@ function compare(event) {
 
         } else {
             // Ten seconds will be subtracted when the user selects the wrong choice.
-            timeRemaining = timeRemaining - penalty;
+            secondsLeft = secondsLeft- penalty;
             createDiv.textContent = "Wrong! The correct answer is:  " + questions[questionIndex].answer;
         }
 
         // The else statement will be triggered if the user selects the wrong answer.
-
+        // The textContent property will cause the text to be visible to the user depending on which part of the conditional statement is triggered.
     }
 
     // Question Index determines number question user is currently answering.
@@ -157,13 +157,14 @@ function compare(event) {
 
 }
 
-// All done will append last page
+// All done will append to the last page.
+
 
 function allDone() {
     questionsDiv.innerHTML = "";
     currentTime.innerHTML = "";
 
-    // Heading on the second to last screen.
+    // The heading on the second to last screen.
 
     var createH1 = document.createElement("h1");
     createH1.setAttribute("id", "createH1");
@@ -179,10 +180,10 @@ function allDone() {
 
     // appendChild() adds the questionsDiv node onto the createP parent node.
 
-    // Calculates time remaining and replaces it with the user's score.
+    // Calculates time remaining and the user's score.
 
-    if (timeRemaining >= 0) {
-        var timeRemaining = timeRemaining;
+    if (secondsLeft >= 0) {
+        var timeRemaining = secondsLeft;
         var createP2 = document.createElement("p");
         clearInterval(holdInterval);
         createP.textContent = "Your final score is: " + timeRemaining;
@@ -232,7 +233,8 @@ function allDone() {
     questionsDiv.appendChild(createSubmit);
 
     // appendChild() adds the questionsDiv node onto the createSubmit parent node.
-    // Event listener to capture initials and local storage for initials and score
+    // Event listener to capture initials and local storage for initials and score.
+
     createSubmit.addEventListener("click", function () {
         var initials = createInput.value;
 
@@ -255,7 +257,8 @@ function allDone() {
             allScores.push(finalScore);
             var newScore = JSON.stringify(allScores);
             localStorage.setItem("allScores", newScore);
-            // Travels to final page
+            // After clicking the "Submit" button, the user to the high scores page.
+            // The user will be able to view high scores, clear scores, and go back to the beginning of the quiz from this page.
             window.location.replace("HighScores.html");
         }
     });
