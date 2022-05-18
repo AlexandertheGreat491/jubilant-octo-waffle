@@ -1,5 +1,5 @@
 /*The application will allow users who are learning JavaScript
-to take a timed quiz on JavaScript that stores high scores, in order 
+to take a timed quiz on JavaScript fundamentals that stores high scores, in order 
 for users to compare themselves to their peers.*/
 
 // Users will click the start button and a timer will start.
